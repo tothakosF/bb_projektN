@@ -1,0 +1,17 @@
+﻿<Window x:Class="projektHet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projektHet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="tanulokGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,34,270,159"/>
+        <Button x:Name="megnyit" Content="Fájl megnyitása" HorizontalAlignment="Left" Margin="69,318,0,0" VerticalAlignment="Top" Height="64" Width="174" FontSize="20" Click="megnyit_Click"/>
+        <Button x:Name="mentes" Content="Fájl megnyitása" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" Height="64" Width="174" FontSize="20" Click="mentes_Click"/>
+        <Button x:Name="haziB" Content="Számol" HorizontalAlignment="Left" Margin="563,47,0,0" VerticalAlignment="Top" Height="50" Width="130" FontSize="20" Click="haziB_Click"/>
+        <Label x:Name="haziL" Content="" HorizontalAlignment="Left" Margin="712,54,0,0" VerticalAlignment="Top" FontSize="20" Width="41"/>
+
+    </Grid>
+</Window>
